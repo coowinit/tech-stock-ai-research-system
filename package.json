@@ -1,0 +1,21 @@
+{
+  "name": "tech-stock-ai-research-system",
+  "version": "1.2.1",
+  "description": "科技制造高增长股票研究系统",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/stage1-tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "iconv-lite": "^0.7.2",
+    "pdf-parse": "^2.4.5"
+  }
+}

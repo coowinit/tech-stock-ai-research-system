@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="AI财报筛选中心：候选发现、正式公告核验、候选池进度和统一数据管理。">
+  <title>AI财报筛选中心｜科技股研究系统</title>
+  <link rel="stylesheet" href="assets/css/common.css?v=20260624-10">
+  <link rel="stylesheet" href="assets/css/screening.css?v=20260624-14">
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">AI</span>
+      <div>科技股研究系统<small>AI筛选 · 动态财报 · 核心看板</small></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">核心数据看板</a>
+      <a class="active" href="screening.html">AI财报筛选中心</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>AI财报筛选中心</h1>
+    <p>把候选发现和正式公告核验拆开处理：先收集可能符合条件的公司进入候选池，再按批次核验正式公告。只有 verified 且来源通过白名单的数据才能写入正式数据库。</p>
+    <div class="hero-badges">
+      <span class="hero-badge">候选发现</span>
+      <span class="hero-badge">正式核验</span>
+      <span class="hero-badge">候选池进度</span>
+      <span class="hero-badge">数据管理与本地回退</span>
+    </div>
+  </section>
+
+  <div class="workflow-summary" id="workflowSummary"></div>
+
+  <div class="tabbar" role="tablist">
+    <button class="tab-control active" data-tab="discoveryTab" type="button">候选发现</button>
+    <button class="tab-control" data-tab="verificationTab" type="button">正式核验</button>
+    <button class="tab-control" data-tab="managementTab" type="button">候选池与数据管理</button>
+  </div>
+
+  <section class="tab-panel" id="discoveryTab">
+    <div class="workflow">
+      <section class="workflow-card">
+        <h2>1. 设置候选发现任务</h2>
+        <p>生成给联网 AI 的候选发现提示词。候选线索可以来自业绩快报、预告或财经线索，但不会直接进入正式数据库。</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="periodSelect">报告期</label>
+            <select id="periodSelect" class="control">
+              <option value="2025A">2025年年度报告</option>
+              <option value="2026Q1">2026年第一季度报告</option>
+              <option value="2026H1">2026年半年度报告</option>
+              <option value="2026Q3">2026年前三季度报告</option>
+              <option value="2026A">2026年年度报告</option>
+              <option value="custom">自定义报告期</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="revenueThreshold">营收同比门槛（%）</label>
+            <input id="revenueThreshold" class="control" type="number" value="8" step="0.1">
+          </div>
+          <div id="periodHint" class="notice warn wide hidden"></div>
+          <div id="customPeriodWrap" class="wide hidden">
+            <div class="form-grid">
+              <div class="field">
+                <label for="customPeriodCode">报告期代码</label>
+                <input id="customPeriodCode" class="control" placeholder="例如：2027Q1">
+              </div>
+              <div class="field">
+                <label for="customPeriodLabel">报告期名称</label>
+                <input id="customPeriodLabel" class="control" placeholder="例如：2027年第一季度报告">
+              </div>
+              <div class="field wide">
+                <label for="customPeriodRange">累计区间</label>
+                <input id="customPeriodRange" class="control" placeholder="例如：2027年1—3月">
+              </div>
+            </div>
+          </div>
+          <div class="field wide">
+            <label for="sectorScope">研究板块范围</label>
+            <textarea id="sectorScope" class="control" rows="3">CPO/高速光模块、PCB/覆铜板、存储芯片/存储产品、先进封装、光纤光缆、MLCC/被动元件、AI芯片、AI服务器、OCS光交换、高速连接、铜箔、电子树脂、电子布、液冷/数据中心温控、电子特气、玻璃与陶瓷基板、磷酸铁锂及其他科技制造方向</textarea>
+          </div>
+        </div>
+        <h3 class="subhead">排除规则</h3>
+        <div class="check-grid">
+          <label class="check-card">
+            <input id="exclude688" type="checkbox" checked>
+            <span><strong>排除688科创板</strong><br><span class="muted">沿用当前股票池规则</span></span>
+          </label>
+          <label class="check-card">
+            <input id="excludeST" type="checkbox" checked>
+            <span><strong>排除ST / *ST</strong><br><span class="muted">降低异常经营风险</span></span>
+          </label>
+          <label class="check-card">
+            <input id="excludeBSE" type="checkbox" checked>
+            <span><strong>排除北交所</strong><br><span class="muted">默认排除北交所公司</span></span>
+          </label>
+        </div>
+      </section>
+
+      <section class="workflow-card">
+        <h2>2. 复制候选发现提问</h2>
+        <p>要求 AI 只返回候选 JSON。候选可以带线索来源，但必须标记 needsOfficialVerification=true。</p>
+        <textarea id="discoveryPrompt" class="control prompt-box"></textarea>
+        <div class="actions inline-actions">
+          <button id="generateDiscoveryBtn" class="btn">重新生成</button>
+          <button id="copyDiscoveryBtn" class="btn btn-primary">复制候选提问</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="workflow-card full">
+      <h2>3. 粘贴候选 JSON 并加入候选池</h2>
+      <p>页面会校验候选代码、报告期、财务线索和来源链接。通过的候选进入候选池，等待正式公告核验。</p>
+      <textarea id="discoveryJsonInput" class="control json-box" placeholder='请粘贴候选发现JSON，例如：{"periodCode":"2026Q1","candidates":[...]}'></textarea>
+      <div class="actions inline-actions">
+        <button id="parseDiscoveryBtn" class="btn btn-primary">解析候选</button>
+        <button id="sampleDiscoveryBtn" class="btn">填入示例JSON</button>
+        <button id="clearDiscoveryBtn" class="btn">清空</button>
+        <span class="spacer"></span>
+        <button id="saveCandidatesBtn" class="btn btn-success" disabled>加入候选池</button>
+      </div>
+      <div id="discoverySummary" class="preview-summary"></div>
+      <div id="discoveryPreview" class="preview-list"></div>
+      <ul id="discoveryValidation" class="validation-list"></ul>
+    </section>
+  </section>
+
+  <section class="tab-panel hidden" id="verificationTab">
+    <div class="workflow">
+      <section class="workflow-card">
+        <h2>1. 选择正式核验批次</h2>
+        <p>从候选池自动选择 5—8 家待核验公司。正式核验必须回到巨潮资讯或交易所公告。</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="verificationPeriod">核验报告期</label>
+            <select id="verificationPeriod" class="control"></select>
+          </div>
+          <div class="field">
+            <label for="verificationBatchSize">批次规模</label>
+            <input id="verificationBatchSize" class="control" type="number" min="5" max="8" value="6">
+          </div>
+        </div>
+        <div class="actions inline-actions">
+          <button id="refreshBatchBtn" class="btn">刷新批次</button>
+          <button id="markVerifyingBtn" class="btn">标记核验中</button>
+        </div>
+        <div id="verificationBatchList" class="candidate-list"></div>
+      </section>
+
+      <section class="workflow-card">
+        <h2>2. 复制正式核验提问</h2>
+        <p>本提示词只针对当前批次。AI 必须把每家公司放入 verified、rejected 或 unverified 三组之一。</p>
+        <textarea id="verificationPrompt" class="control prompt-box"></textarea>
+        <div class="actions inline-actions">
+          <button id="generateVerificationBtn" class="btn">重新生成</button>
+          <button id="copyVerificationBtn" class="btn btn-primary">复制核验提问</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="workflow-card full">
+      <h2>3. 粘贴正式核验 JSON 并入库</h2>
+      <p>只有 verifiedStocks 中通过正式准入门的记录会写入正式数据库；rejected 和 unverified 会更新候选池状态。</p>
+      <textarea id="verificationJsonInput" class="control json-box" placeholder='请粘贴正式核验JSON，例如：{"periodCode":"2026Q1","verifiedStocks":[],"rejectedStocks":[],"unverifiedStocks":[]}'></textarea>
+      <div class="actions inline-actions">
+        <button id="parseVerificationBtn" class="btn btn-primary">解析核验结果</button>
+        <button id="sampleVerificationBtn" class="btn">填入示例JSON</button>
+        <button id="clearVerificationBtn" class="btn">清空</button>
+        <span class="spacer"></span>
+        <button id="mergeVerificationBtn" class="btn btn-success" disabled>合并已核验并更新候选池</button>
+      </div>
+      <div id="verificationSummary" class="preview-summary"></div>
+      <div id="verificationPreview" class="preview-list"></div>
+      <ul id="verificationValidation" class="validation-list"></ul>
+    </section>
+  </section>
+
+  <section class="tab-panel hidden" id="managementTab">
+    <section class="workflow-card full">
+      <h2>候选池进度</h2>
+      <p id="workflowStatus">正在读取候选池…</p>
+      <div class="actions inline-actions">
+        <label class="field compact">
+          <span>状态筛选</span>
+          <select id="candidateStatusFilter" class="control">
+            <option value="">全部状态</option>
+            <option value="pending">待核验</option>
+            <option value="verifying">核验中</option>
+            <option value="verified">已入库</option>
+            <option value="rejected">已淘汰</option>
+            <option value="unverified">无法核验</option>
+          </select>
+        </label>
+        <label class="field compact">
+          <span>报告期筛选</span>
+          <select id="candidatePeriodFilter" class="control"></select>
+        </label>
+        <span class="spacer"></span>
+        <button id="exportWorkflowBtn" class="btn">导出候选池工作流</button>
+        <button id="importWorkflowBtn" class="btn">导入候选池工作流</button>
+        <input id="workflowImportFile" class="file-input" type="file" accept=".json,application/json">
+        <button id="resetWorkflowBtn" class="btn btn-danger">清空候选池</button>
+      </div>
+      <div id="candidateList" class="candidate-list"></div>
+      <div class="notice" style="margin-top:14px">候选池工作流与正式数据库相互独立。换电脑或清理浏览器数据前，请分别导出候选池工作流和正式数据库。</div>
+    </section>
+
+    <section class="workflow-card full">
+      <h2>待补公告来源清单</h2>
+      <p>这些正式数据库记录仍缺少可信公告来源或未完成 verified 核验，建议优先补齐。</p>
+      <div class="actions inline-actions">
+        <label class="field compact">
+          <span>报告期</span>
+          <select id="sourcePeriodFilter" class="control"></select>
+        </label>
+        <span class="spacer"></span>
+        <button id="refreshSourceDebtBtn" class="btn">刷新清单</button>
+      </div>
+      <div id="sourceDebtList" class="candidate-list"></div>
+    </section>
+
+    <section class="workflow-card full">
+      <h2>正式数据库管理</h2>
+      <p id="dbStatus">正在读取数据库…</p>
+      <div id="backupStatus" class="notice hidden"></div>
+      <div id="sourceHealth" class="source-health" aria-label="来源健康度概览"></div>
+      <div class="actions inline-actions">
+        <button id="exportBtn" class="btn btn-primary">导出正式数据库</button>
+        <button id="importBtn" class="btn">导入正式数据库</button>
+        <input id="importFile" class="file-input" type="file" accept=".json,application/json">
+        <button id="syncDefaultBtn" class="btn">同步最新版内置数据</button>
+        <span class="spacer"></span>
+        <a class="btn" href="index.html">前往核心数据看板</a>
+        <button id="resetBtn" class="btn btn-danger">恢复初始数据</button>
+      </div>
+
+      <div class="maintenance-panel">
+        <div class="maintenance-head">
+          <div>
+            <h3>正式数据维护</h3>
+            <p>在这里集中删除错误报告期或不再跟踪的公司。删除操作不会影响候选池，并会自动创建删除前快照。</p>
+          </div>
+          <div id="maintenanceSummary" class="maintenance-summary"></div>
+        </div>
+        <div class="toolbar maintenance-toolbar">
+          <div class="field wide">
+            <label for="maintenanceSearchInput">搜索公司、代码或板块</label>
+            <input id="maintenanceSearchInput" class="control" type="search" placeholder="例如：德明利、001309、存储芯片">
+          </div>
+          <label class="field compact">
+            <span>报告期</span>
+            <select id="maintenancePeriodSelect" class="control"></select>
+          </label>
+          <label class="filter-toggle">
+            <input id="maintenanceIssueOnly" type="checkbox">
+            <span>仅显示待补/异常来源</span>
+          </label>
+          <button id="maintenanceResetBtn" class="btn" type="button">重置筛选</button>
+        </div>
+        <div id="maintenanceList" class="candidate-list maintenance-list"></div>
+      </div>
+    </section>
+
+    <section class="workflow-card full">
+      <h2>本地快照（本机回退记录）</h2>
+      <p>最多保留最近 20 个，只用于当前浏览器中的误操作恢复，不能代替正式数据库 JSON 备份。</p>
+      <div class="actions inline-actions">
+        <button id="createBackupBtn" class="btn">创建当前快照</button>
+        <button id="refreshBackupsBtn" class="btn">刷新列表</button>
+        <span class="spacer"></span>
+        <span class="muted">重要数据库操作前后会自动生成快照。</span>
+      </div>
+      <div id="backupList" class="candidate-list"></div>
+      <div class="notice warn" style="margin-top:14px">本地快照保存在浏览器 localStorage 中，清理站点数据、换浏览器、换电脑或更换访问地址后可能无法读取。</div>
+    </section>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/default-data.js?v=20260624-10"></script>
+<script src="assets/js/database.js?v=20260624-10"></script>
+<script src="assets/js/research-workflow.js?v=20260624-10"></script>
+<script src="assets/js/screening.js?v=20260624-14"></script>
+</body>
+</html>

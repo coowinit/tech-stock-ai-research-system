@@ -1,0 +1,63 @@
+{
+  "taskType": "official_verification",
+  "periodCode": "2025A",
+  "periodLabel": "2025年年度报告",
+  "submittedCount": 3,
+  "verifiedCount": 1,
+  "rejectedCount": 1,
+  "unverifiedCount": 1,
+  "warnings": [],
+  "verifiedStocks": [
+    {
+      "name": "示例通过公司",
+      "code": "000001.SZ",
+      "sector": "AI服务器与算力网络",
+      "tags": [
+        "AI服务器"
+      ],
+      "report": {
+        "periodCode": "2025A",
+        "periodLabel": "2025年年度报告",
+        "periodRange": "2025年1—12月",
+        "revenue": 123.45,
+        "revenueGrowth": 18.6,
+        "netProfit": 5.67,
+        "netProfitPositive": true,
+        "netProfitGrowth": 22.3,
+        "netProfitGrowthText": "",
+        "deductNetProfit": 5.21,
+        "operatingCashFlow": 6.78,
+        "sourceName": "示例通过公司2025年年度报告",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-20/actual-report.pdf",
+        "sourceType": "cninfo",
+        "announcementDate": "2026-03-20",
+        "verificationStatus": "verified"
+      }
+    }
+  ],
+  "rejectedStocks": [
+    {
+      "name": "示例淘汰公司",
+      "code": "000002.SZ",
+      "reasonCodes": [
+        "NET_PROFIT_GROWTH_NOT_POSITIVE"
+      ],
+      "reasons": [
+        "归母净利润同比下降"
+      ],
+      "officialRevenueGrowth": 12.3,
+      "officialNetProfit": 1.23,
+      "officialNetProfitGrowth": -18.5,
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-21/rejected-report.pdf"
+    }
+  ],
+  "unverifiedStocks": [
+    {
+      "name": "示例待核验公司",
+      "code": "000003.SZ",
+      "reason": "未找到或未能打开正式年度报告",
+      "sourceUrl": null,
+      "verificationStatus": "ai_unverified"
+    }
+  ]
+}

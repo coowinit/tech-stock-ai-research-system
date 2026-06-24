@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="科技制造高增长股票核心数据看板，按动态报告期展示营收与归母净利润增长状态。">
+  <title>科技制造高增长股票池｜核心数据看板</title>
+  <link rel="stylesheet" href="assets/css/common.css?v=20260624-5">
+  <link rel="stylesheet" href="assets/css/dashboard.css?v=20260624-5">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">AI</span>
+        <div>科技股研究系统<small>AI筛选 · 动态财报 · 核心看板</small></div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="index.html">核心数据看板</a>
+        <a href="screening.html">AI财报筛选中心</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>科技制造高增长股票池</h1>
+      <p>展示已经通过 AI 查询、正式公告来源核验和 PDF 字段级核验的数据。页面按报告期动态读取数据库，聚焦营收同比、归母净利润同比、利润规模、连续双增期数与当前状态。</p>
+      <div class="hero-badges">
+        <span class="hero-badge">动态报告期结构</span>
+        <span class="hero-badge">当前增长池 + 历史观察池</span>
+        <span class="hero-badge">PDF字段级核验</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article class="stat"><div class="stat-label">当前增长池</div><div class="stat-value" id="statCurrent">0</div><div class="stat-note">本期营收与利润同时增长</div></article>
+      <article class="stat"><div class="stat-label">历史观察池</div><div class="stat-value" id="statWatch">0</div><div class="stat-note">曾入选但本期未满足</div></article>
+      <article class="stat"><div class="stat-label">覆盖板块</div><div class="stat-value" id="statSectors">0</div><div class="stat-note">按数据库全部公司统计</div></article>
+      <article class="stat"><div class="stat-label">当前报告期</div><div class="stat-value" id="statPeriod">—</div><div class="stat-note">可切换查看历史报告期</div></article>
+    </section>
+
+    <section class="panel">
+      <div class="toolbar">
+        <div class="field"><label for="searchInput">搜索股票、代码、板块或概念</label><input id="searchInput" class="control" type="search" placeholder="例如：光模块、600183、液冷、GPU"></div>
+        <div class="field"><label for="sectorFilter">板块筛选</label><select id="sectorFilter" class="control"><option value="">全部板块</option></select></div>
+        <div class="field"><label for="periodFilter">报告期</label><select id="periodFilter" class="control"></select></div>
+        <div class="field"><label for="poolFilter">股票池状态</label><select id="poolFilter" class="control"><option value="">全部状态</option><option value="current">当前增长池</option><option value="watch">历史观察池</option><option value="pending">待更新</option></select></div>
+        <div class="field"><label for="verificationFilter">核验状态</label><select id="verificationFilter" class="control"><option value="">全部核验状态</option><option value="verified">已核验</option><option value="pending">待补来源</option><option value="conflict">数据冲突</option><option value="missing">本期无记录</option></select></div>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="screening.html#managementTab">打开AI财报筛选中心</a>
+        <button class="btn" id="printBtn">打印 / PDF</button>
+        <span class="spacer"></span>
+        <div class="field" style="min-width:190px">
+          <select id="sortSelect" class="control">
+            <option value="profit|desc">净利润增速：高到低</option>
+            <option value="revenue|desc">营收增速：高到低</option>
+            <option value="streak|desc">连续双增：多到少</option>
+            <option value="sector|asc">板块：按名称</option>
+            <option value="name|asc">股票：按名称</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="result-info">
+        <span id="resultText">正在加载…</span>
+        <span>点击“详情”查看历史报告期、概念标签、来源核验和 PDF 字段核验状态。</span>
+      </div>
+      <div class="notice" id="serverHint" style="margin:12px 18px"></div>
+
+      <div class="dashboard-table-wrap">
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th class="col-name">股票</th>
+              <th class="col-sector">所属板块</th>
+              <th class="col-period">报告期</th>
+              <th class="col-metric">营收同比</th>
+              <th class="col-metric">净利润同比</th>
+              <th class="col-profit">归母净利润</th>
+              <th class="col-streak">连续双增</th>
+              <th class="col-status">状态</th>
+              <th class="col-action">操作</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+        <div class="empty hidden" id="emptyState"><strong>没有符合条件的数据</strong><span>请调整报告期或筛选条件。</span></div>
+      </div>
+
+      <div class="footer-note"><strong>判定规则：</strong>“本期双增”默认为营业收入同比 &gt; 8%、归母净利润 &gt; 0，并且归母净利润同比 &gt; 0 或明确为扭亏为盈。最新一期不满足时不会删除公司，而是进入历史观察池。</div>
+    </section>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script src="assets/js/default-data.js?v=20260624-5"></script>
+  <script src="assets/js/database.js?v=20260624-5"></script>
+  <script src="assets/js/dashboard.js?v=20260624-5"></script>
+</body>
+</html>

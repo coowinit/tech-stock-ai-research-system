@@ -1,0 +1,38 @@
+{
+  "taskType": "candidate_discovery",
+  "periodCode": "2025A",
+  "periodLabel": "2025年年度报告",
+  "batchNo": 1,
+  "scanComplete": false,
+  "hasMore": true,
+  "searchedSectors": [
+    "CPO/高速光模块"
+  ],
+  "remainingSectors": [
+    "AI服务器与算力网络",
+    "高速连接"
+  ],
+  "batchCandidates": 1,
+  "warnings": [],
+  "candidates": [
+    {
+      "name": "示例公司",
+      "code": "300001.SZ",
+      "sector": "CPO/高速光模块",
+      "tags": [
+        "高速光模块"
+      ],
+      "candidateReason": "公开线索显示2025年营收和归母净利润双增长",
+      "reportedRevenueGrowth": 18.6,
+      "reportedNetProfit": 5.67,
+      "reportedNetProfitPositive": true,
+      "reportedNetProfitGrowth": 22.3,
+      "reportedNetProfitGrowthText": "",
+      "dataBasis": "performance_flash",
+      "sourceType": "financial_media",
+      "discoverySourceName": "实际线索名称",
+      "discoverySourceUrl": "https://finance.eastmoney.com/a/20250101.html",
+      "needsOfficialVerification": true
+    }
+  ]
+}

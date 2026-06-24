@@ -1,0 +1,33 @@
+{
+  "periodCode": "2026H1",
+  "periodLabel": "2026年半年度报告",
+  "stocks": [
+    {
+      "name": "示例公司",
+      "code": "000001.SZ",
+      "sector": "AI服务器",
+      "tags": [
+        "AI服务器",
+        "算力基础设施"
+      ],
+      "report": {
+        "periodCode": "2026H1",
+        "periodLabel": "2026年半年度报告",
+        "periodRange": "2026年1—6月",
+        "revenue": 123.45,
+        "revenueGrowth": 18.6,
+        "netProfit": 5.67,
+        "netProfitPositive": true,
+        "netProfitGrowth": 22.3,
+        "netProfitGrowthText": "",
+        "deductNetProfit": null,
+        "operatingCashFlow": null,
+        "sourceName": "示例公司2026年半年度报告",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-08-20/actual-report.pdf",
+        "sourceType": "cninfo",
+        "announcementDate": "2026-08-20",
+        "verificationStatus": "verified"
+      }
+    }
+  ]
+}
