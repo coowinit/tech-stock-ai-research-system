@@ -38,11 +38,11 @@
 
 ![AI 筛选中心](docs/preview-screening.png)
 
-### JSON 解析与正式核验
+### 候选池与数据管理
 
-页面支持解析 AI 返回的 JSON，自动清洗常见 Markdown 代码块、前后说明文字和包装格式，并在入库前做严格校验。
+`screening.html` 的“候选池与数据管理”页面用于管理候选池、正式数据库、本机快照、公告来源清单以及正式数据删除操作。
 
-![JSON 解析预览](docs/preview-screening-json.png)
+![候选池与数据管理](docs/preview-screening-data-management.png)
 
 ## 系统特色
 
