@@ -1,6 +1,6 @@
 {
   "name": "tech-stock-ai-research-system",
-  "version": "1.2.1",
+  "version": "1.5.0",
   "description": "科技制造高增长股票研究系统",
   "main": "index.js",
   "directories": {

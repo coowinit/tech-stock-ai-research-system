@@ -42,7 +42,7 @@ const DB = context.window.TechStockDB;
 const WF = context.window.TechStockWorkflow;
 
 const db = DB.load();
-assert.equal(db.stocks.length, 80, 'default stock count');
+assert.equal(db.stocks.length, 99, 'default stock count');
 assert.equal(db.settings.excludeBSE, true, 'excludeBSE defaults true');
 assert.equal(db.schemaVersion, '2.1.0');
 const sourceDebt = db.stocks.flatMap(stock => stock.reports.map(report => ({
@@ -177,7 +177,7 @@ const migratedReport = DB.getReport(migrated.stocks.find(s => s.code === '000988
 assert.equal(migratedReport.netProfit, 14.7079470416, 'stale 2025A net profit auto-upgraded');
 assert.equal(migratedReport.netProfitGrowth, 20.48, 'stale 2025A growth auto-upgraded');
 assert(migrated.stocks.some(s => s.code === '300999.SZ'), 'user-added stock preserved');
-assert.equal(migrated.builtInDataVersion, '2026-06-24-pdf-field-audited-v1');
+assert.equal(migrated.builtInDataVersion, '2026-06-30-physical-ai-core-v3');
 console.log('Built-in data migration tests passed.');
 
 

@@ -1,9 +1,9 @@
 {
-  "auditedAt": "2026-06-24T03:58:29.467Z",
+  "auditedAt": "2026-06-30T03:45:00Z",
   "dryRun": false,
   "summary": {
-    "matched": 150,
-    "partial": 8,
+    "matched": 187,
+    "partial": 9,
     "mismatch": 2
   },
   "results": [
@@ -5925,6 +5925,1412 @@
       "evidence": {
         "revenueLine": "或重大遗漏，并承担个别和连带的法律责任。 2.公司负责人、主管会计工作负责人及会计机构负责人(会计主管人员)声明：保证季度报告中财务 信息的真实、准确、完整。 3.第一季度财务会计报告是否经过审计 □是 否 一、主要财务数据 （一） 主要会计数据和财务指标 公司是否需追溯调整或重述以前年度会计数据 □是 否 本报告期 上年同期 本报告期比上年 同期增减（%） 营业收入（元） 184,024,141.98 118,074,401.68 55.85%",
         "netProfitLine": "2.公司负责人、主管会计工作负责人及会计机构负责人(会计主管人员)声明：保证季度报告中财务 信息的真实、准确、完整。 3.第一季度财务会计报告是否经过审计 □是 否 一、主要财务数据 （一） 主要会计数据和财务指标 公司是否需追溯调整或重述以前年度会计数据 □是 否 本报告期 上年同期 本报告期比上年 同期增减（%） 营业收入（元） 184,024,141.98 118,074,401.68 55.85% 归属于上市公司股东的净利润（元） 35,975,552.92 14,558,834.73 147.10%"
+      }
+    },
+    {
+      "name": "江丰电子",
+      "code": "300666.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225108969.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 46.0410074312,
+          "expectedAmountYi": 46.0410074312,
+          "amountMatched": true,
+          "growth": 27.72,
+          "expectedGrowth": 27.72,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 4,604,100,743.12 元，同比增长 27.72%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 4.9950304066,
+          "expectedAmountYi": 4.9950304066,
+          "amountMatched": true,
+          "growth": 24.7,
+          "expectedGrowth": 24.7,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 499,503,040.66 元，同比增长 24.70%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 4,604,100,743.12 元，同比增长 27.72%。",
+        "netProfitLine": "归属于上市公司股东的净利润 499,503,040.66 元，同比增长 24.70%。"
+      }
+    },
+    {
+      "name": "江丰电子",
+      "code": "300666.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-29/e1044381-6db4-4742-8527-ab02e3e02aeb.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 13.0550530003,
+          "expectedAmountYi": 13.0550530003,
+          "amountMatched": true,
+          "growth": 30.49,
+          "expectedGrowth": 30.49,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 1,305,505,300.03 元，同比增长 30.49%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 2.0974692031,
+          "expectedAmountYi": 2.0974692031,
+          "amountMatched": true,
+          "growth": 33.42,
+          "expectedGrowth": 33.42,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 209,746,920.31 元，同比增长 33.42%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 1,305,505,300.03 元，同比增长 30.49%。",
+        "netProfitLine": "归属于上市公司股东的净利润 209,746,920.31 元，同比增长 33.42%。"
+      }
+    },
+    {
+      "name": "豪威集团",
+      "code": "603501.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225055209.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 288.5480551749,
+          "expectedAmountYi": 288.5480551749,
+          "amountMatched": true,
+          "growth": 12.14,
+          "expectedGrowth": 12.14,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 28,854,805,517.49 元，同比增长 12.14%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 40.4541653033,
+          "expectedAmountYi": 40.4541653033,
+          "amountMatched": true,
+          "growth": 21.73,
+          "expectedGrowth": 21.73,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 4,045,416,530.33 元，同比增长 21.73%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 28,854,805,517.49 元，同比增长 12.14%。",
+        "netProfitLine": "归属于上市公司股东的净利润 4,045,416,530.33 元，同比增长 21.73%。"
+      }
+    },
+    {
+      "name": "豪威集团",
+      "code": "603501.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225258080.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 64.1403307902,
+          "expectedAmountYi": 64.1403307902,
+          "amountMatched": true,
+          "growth": -0.9,
+          "expectedGrowth": -0.9,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 6,414,033,079.02 元，同比下降 0.90%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 5.0294930592,
+          "expectedAmountYi": 5.0294930592,
+          "amountMatched": true,
+          "growth": -41.92,
+          "expectedGrowth": -41.92,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 502,949,305.92 元，同比下降 41.92%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 6,414,033,079.02 元，同比下降 0.90%。",
+        "netProfitLine": "归属于上市公司股东的净利润 502,949,305.92 元，同比下降 41.92%。"
+      }
+    },
+    {
+      "name": "柯力传感",
+      "code": "603662.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://www.sse.com.cn/disclosure/listedinfo/summaries/indexDetail.shtml?SEQ=334630232",
+      "status": "partial",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 15.584389,
+          "expectedAmountYi": 15.584389,
+          "amountMatched": true,
+          "growth": 20.33,
+          "expectedGrowth": 20.33,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "2025年营业收入约 15.58 亿元，同比增长 20.33%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 3.4055127086,
+          "expectedAmountYi": 3.4055127086,
+          "amountMatched": true,
+          "growth": 30.73,
+          "expectedGrowth": 30.73,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 340,551,270.86 元，同比增长 30.73%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "2025年营业收入约 15.58 亿元，同比增长 20.33%。",
+        "netProfitLine": "归属于上市公司股东的净利润 340,551,270.86 元，同比增长 30.73%。"
+      }
+    },
+    {
+      "name": "柯力传感",
+      "code": "603662.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260427/af6ccbdd27ab4482aa2ac0906b9828e4.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 3.5768924681,
+          "expectedAmountYi": 3.5768924681,
+          "amountMatched": true,
+          "growth": 13.34,
+          "expectedGrowth": 13.34,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 357,689,246.81 元，同比增长 13.34%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.4111929894,
+          "expectedAmountYi": 0.4111929894,
+          "amountMatched": true,
+          "growth": -45.65,
+          "expectedGrowth": -45.65,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 41,119,298.94 元，同比下降 45.65%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 357,689,246.81 元，同比增长 13.34%。",
+        "netProfitLine": "归属于上市公司股东的净利润 41,119,298.94 元，同比下降 45.65%。"
+      }
+    },
+    {
+      "name": "汇川技术",
+      "code": "300124.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225208487.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 451.0484420013,
+          "expectedAmountYi": 451.0484420013,
+          "amountMatched": true,
+          "growth": 21.77,
+          "expectedGrowth": 21.77,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 45,104,844,200.13 元，同比增长 21.77%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 50.5000208989,
+          "expectedAmountYi": 50.5000208989,
+          "amountMatched": true,
+          "growth": 17.84,
+          "expectedGrowth": 17.84,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 5,050,002,089.89 元，同比增长 17.84%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 45,104,844,200.13 元，同比增长 21.77%。",
+        "netProfitLine": "归属于上市公司股东的净利润 5,050,002,089.89 元，同比增长 17.84%。"
+      }
+    },
+    {
+      "name": "汇川技术",
+      "code": "300124.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225208497.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 101.4322337812,
+          "expectedAmountYi": 101.4322337812,
+          "amountMatched": true,
+          "growth": 12.98,
+          "expectedGrowth": 12.98,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 10,143,223,378.12 元，同比增长 12.98%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 10.1345115158,
+          "expectedAmountYi": 10.1345115158,
+          "amountMatched": true,
+          "growth": -23.39,
+          "expectedGrowth": -23.39,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 1,013,451,151.58 元，同比下降 23.39%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 10,143,223,378.12 元，同比增长 12.98%。",
+        "netProfitLine": "归属于上市公司股东的净利润 1,013,451,151.58 元，同比下降 23.39%。"
+      }
+    },
+    {
+      "name": "三花智控",
+      "code": "002050.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-24/1225026521.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 310.1174451027,
+          "expectedAmountYi": 310.1174451027,
+          "amountMatched": true,
+          "growth": 10.97,
+          "expectedGrowth": 10.97,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 31,011,744,510.27 元，同比增长 10.97%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 40.628914121,
+          "expectedAmountYi": 40.628914121,
+          "amountMatched": true,
+          "growth": 31.1,
+          "expectedGrowth": 31.1,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 4,062,891,412.10 元，同比增长 31.10%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 31,011,744,510.27 元，同比增长 10.97%。",
+        "netProfitLine": "归属于上市公司股东的净利润 4,062,891,412.10 元，同比增长 31.10%。"
+      }
+    },
+    {
+      "name": "三花智控",
+      "code": "002050.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225260314.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 77.7355541929,
+          "expectedAmountYi": 77.7355541929,
+          "amountMatched": true,
+          "growth": 1.36,
+          "expectedGrowth": 1.36,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 7,773,555,419.29 元，同比增长 1.36%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 9.2762185377,
+          "expectedAmountYi": 9.2762185377,
+          "amountMatched": true,
+          "growth": 2.68,
+          "expectedGrowth": 2.68,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 927,621,853.77 元，同比增长 2.68%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 7,773,555,419.29 元，同比增长 1.36%。",
+        "netProfitLine": "归属于上市公司股东的净利润 927,621,853.77 元，同比增长 2.68%。"
+      }
+    },
+    {
+      "name": "拓普集团",
+      "code": "601689.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260323/b69f8050608c48bebee446c32ee69643.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 295.8145867527,
+          "expectedAmountYi": 295.8145867527,
+          "amountMatched": true,
+          "growth": 11.21,
+          "expectedGrowth": 11.21,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 29,581,458,675.27 元，同比增长 11.21%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 27.7907110334,
+          "expectedAmountYi": 27.7907110334,
+          "amountMatched": true,
+          "growth": -7.38,
+          "expectedGrowth": -7.38,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 2,779,071,103.34 元，同比下降 7.38%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 29,581,458,675.27 元，同比增长 11.21%。",
+        "netProfitLine": "归属于上市公司股东的净利润 2,779,071,103.34 元，同比下降 7.38%。"
+      }
+    },
+    {
+      "name": "拓普集团",
+      "code": "601689.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225253875.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 66.2818576977,
+          "expectedAmountYi": 66.2818576977,
+          "amountMatched": true,
+          "growth": 14.92,
+          "expectedGrowth": 14.92,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 6,628,185,769.77 元，同比增长 14.92%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 5.5179992886,
+          "expectedAmountYi": 5.5179992886,
+          "amountMatched": true,
+          "growth": -2.42,
+          "expectedGrowth": -2.42,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 551,799,928.86 元，同比下降 2.42%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 6,628,185,769.77 元，同比增长 14.92%。",
+        "netProfitLine": "归属于上市公司股东的净利润 551,799,928.86 元，同比下降 2.42%。"
+      }
+    },
+    {
+      "name": "立昂微",
+      "code": "605358.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=605358",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 35.90919,
+          "expectedAmountYi": 35.90919,
+          "amountMatched": true,
+          "growth": 16.12,
+          "expectedGrowth": 16.12,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 359,091.90 万元，同比增长 16.12%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": -1.424442,
+          "expectedAmountYi": -1.424442,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "亏损收窄46.40%",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 -14,244.42 万元，同比减亏 46.40%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 359,091.90 万元，同比增长 16.12%。",
+        "netProfitLine": "归属于上市公司股东的净利润 -14,244.42 万元，同比减亏 46.40%。"
+      }
+    },
+    {
+      "name": "立昂微",
+      "code": "605358.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=605358",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 9.993811,
+          "expectedAmountYi": 9.993811,
+          "amountMatched": true,
+          "growth": 21.81,
+          "expectedGrowth": 21.81,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 99,938.11 万元，同比增长 21.81%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.072246,
+          "expectedAmountYi": 0.072246,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "扭亏为盈",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 722.46 万元，上年同期亏损 8,103.58 万元，扭亏为盈。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 99,938.11 万元，同比增长 21.81%。",
+        "netProfitLine": "归属于上市公司股东的净利润 722.46 万元，上年同期亏损 8,103.58 万元，扭亏为盈。"
+      }
+    },
+    {
+      "name": "埃斯顿",
+      "code": "002747.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-31/1225059897.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 48.8801096364,
+          "expectedAmountYi": 48.8801096364,
+          "amountMatched": true,
+          "growth": 21.93,
+          "expectedGrowth": 21.93,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 4,888,010,963.64 元，同比增长 21.93%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.4497220209,
+          "expectedAmountYi": 0.4497220209,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "扭亏为盈",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 44,972,202.09 元，上年同期亏损 810,444,512.94 元，扭亏为盈。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 4,888,010,963.64 元，同比增长 21.93%。",
+        "netProfitLine": "归属于上市公司股东的净利润 44,972,202.09 元，上年同期亏损 810,444,512.94 元，扭亏为盈。"
+      }
+    },
+    {
+      "name": "埃斯顿",
+      "code": "002747.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225261270.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 12.165549214,
+          "expectedAmountYi": 12.165549214,
+          "amountMatched": true,
+          "growth": -2.22,
+          "expectedGrowth": -2.22,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 1,216,554,921.40 元，同比下降 2.22%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.978366605,
+          "expectedAmountYi": 0.978366605,
+          "amountMatched": true,
+          "growth": 674.64,
+          "expectedGrowth": 674.64,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 97,836,660.50 元，同比增长 674.64%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 1,216,554,921.40 元，同比下降 2.22%。",
+        "netProfitLine": "归属于上市公司股东的净利润 97,836,660.50 元，同比增长 674.64%。"
+      }
+    },
+    {
+      "name": "德赛西威",
+      "code": "002920.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-03-06/71f46a45-d981-420e-b12d-3ece08a37047.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 325.5717834837,
+          "expectedAmountYi": 325.5717834837,
+          "amountMatched": true,
+          "growth": 17.88,
+          "expectedGrowth": 17.88,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 32,557,178,348.37 元，同比增长 17.88%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 24.5358476775,
+          "expectedAmountYi": 24.5358476775,
+          "amountMatched": true,
+          "growth": 22.38,
+          "expectedGrowth": 22.38,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 2,453,584,767.75 元，同比增长 22.38%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 32,557,178,348.37 元，同比增长 17.88%。",
+        "netProfitLine": "归属于上市公司股东的净利润 2,453,584,767.75 元，同比增长 22.38%。"
+      }
+    },
+    {
+      "name": "德赛西威",
+      "code": "002920.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225201023.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 64.95182292,
+          "expectedAmountYi": 64.95182292,
+          "amountMatched": true,
+          "growth": -4.37,
+          "expectedGrowth": -4.37,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 6,495,182,292.00 元，同比下降 4.37%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 4.6148796735,
+          "expectedAmountYi": 4.6148796735,
+          "amountMatched": true,
+          "growth": -20.74,
+          "expectedGrowth": -20.74,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 461,487,967.35 元，同比下降 20.74%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 6,495,182,292.00 元，同比下降 4.37%。",
+        "netProfitLine": "归属于上市公司股东的净利润 461,487,967.35 元，同比下降 20.74%。"
+      }
+    },
+    {
+      "name": "五洲新春",
+      "code": "603667.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-28/1225214708.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 33.4329433179,
+          "expectedAmountYi": 33.4329433179,
+          "amountMatched": true,
+          "growth": 2.41,
+          "expectedGrowth": 2.41,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 3,343,294,331.79 元，同比增长 2.41%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.9138993468,
+          "expectedAmountYi": 0.9138993468,
+          "amountMatched": true,
+          "growth": 0.02,
+          "expectedGrowth": 0.02,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 91,389,934.68 元，同比增长 0.02%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 3,343,294,331.79 元，同比增长 2.41%。",
+        "netProfitLine": "归属于上市公司股东的净利润 91,389,934.68 元，同比增长 0.02%。"
+      }
+    },
+    {
+      "name": "五洲新春",
+      "code": "603667.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=603667",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 7.2179012621,
+          "expectedAmountYi": 7.2179012621,
+          "amountMatched": true,
+          "growth": -18.83,
+          "expectedGrowth": -18.83,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 721,790,126.21 元，同比下降 18.83%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.3080000598,
+          "expectedAmountYi": 0.3080000598,
+          "amountMatched": true,
+          "growth": -18.62,
+          "expectedGrowth": -18.62,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 30,800,005.98 元，同比下降 18.62%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 721,790,126.21 元，同比下降 18.83%。",
+        "netProfitLine": "归属于上市公司股东的净利润 30,800,005.98 元，同比下降 18.62%。"
+      }
+    },
+    {
+      "name": "科大讯飞",
+      "code": "002230.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233580.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 271.0539054766,
+          "expectedAmountYi": 271.0539054766,
+          "amountMatched": true,
+          "growth": 16.12,
+          "expectedGrowth": 16.12,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 27,105,390,547.66 元，同比增长 16.12%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 8.3939086136,
+          "expectedAmountYi": 8.3939086136,
+          "amountMatched": true,
+          "growth": 49.85,
+          "expectedGrowth": 49.85,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 839,390,861.36 元，同比增长 49.85%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 27,105,390,547.66 元，同比增长 16.12%。",
+        "netProfitLine": "归属于上市公司股东的净利润 839,390,861.36 元，同比增长 49.85%。"
+      }
+    },
+    {
+      "name": "科大讯飞",
+      "code": "002230.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233589.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 52.7418866025,
+          "expectedAmountYi": 52.7418866025,
+          "amountMatched": true,
+          "growth": 13.23,
+          "expectedGrowth": 13.23,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 5,274,188,660.25 元，同比增长 13.23%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": -1.6972462152,
+          "expectedAmountYi": -1.6972462152,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "亏损收窄12.17%",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 -169,724,621.52 元，同比减亏 12.17%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 5,274,188,660.25 元，同比增长 13.23%。",
+        "netProfitLine": "归属于上市公司股东的净利润 -169,724,621.52 元，同比减亏 12.17%。"
+      }
+    },
+    {
+      "name": "机器人",
+      "code": "300024.SZ",
+      "periodCode": "2025A",
+      "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-24/ef474037-594a-4024-9847-f0122d77cacc.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 41.2180544005,
+          "expectedAmountYi": 41.2180544005,
+          "amountMatched": true,
+          "growth": -0.4,
+          "expectedGrowth": -0.4,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 4,121,805,440.05 元，同比下降 0.40%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": -3.9788093447,
+          "expectedAmountYi": -3.9788093447,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "亏损扩大105.43%",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 -397,880,934.47 元，同比亏损扩大 105.43%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 4,121,805,440.05 元，同比下降 0.40%。",
+        "netProfitLine": "归属于上市公司股东的净利润 -397,880,934.47 元，同比亏损扩大 105.43%。"
+      }
+    },
+    {
+      "name": "机器人",
+      "code": "300024.SZ",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.szse.cn/disclosure/listed/bulletin/index.html?stock=300024",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 6.3034497244,
+          "expectedAmountYi": 6.3034497244,
+          "amountMatched": true,
+          "growth": -8.42,
+          "expectedGrowth": -8.42,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 630,344,972.44 元，同比下降 8.42%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": -0.9250158514,
+          "expectedAmountYi": -0.9250158514,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "亏损扩大84.02%",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 -92,501,585.14 元，同比亏损扩大 84.02%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 630,344,972.44 元，同比下降 8.42%。",
+        "netProfitLine": "归属于上市公司股东的净利润 -92,501,585.14 元，同比亏损扩大 84.02%。"
+      }
+    },
+    {
+      "name": "安集科技",
+      "code": "688019.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225108553.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 25.0421794048,
+          "expectedAmountYi": 25.0421794048,
+          "amountMatched": true,
+          "growth": 36.47,
+          "expectedGrowth": 36.47,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 2,504,217,940.48 元，同比增长 36.47%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 7.8364833786000005,
+          "expectedAmountYi": 7.8364833786000005,
+          "amountMatched": true,
+          "growth": 46.85,
+          "expectedGrowth": 46.85,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 783,648,337.86 元，同比增长 46.85%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 2,504,217,940.48 元，同比增长 36.47%。",
+        "netProfitLine": "归属于上市公司股东的净利润 783,648,337.86 元，同比增长 46.85%。"
+      }
+    },
+    {
+      "name": "安集科技",
+      "code": "688019.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688019",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 7.2392840113,
+          "expectedAmountYi": 7.2392840113,
+          "amountMatched": true,
+          "growth": 32.76,
+          "expectedGrowth": 32.76,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 723,928,401.13 元，同比增长 32.76%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 2.076680288,
+          "expectedAmountYi": 2.076680288,
+          "amountMatched": true,
+          "growth": 23.01,
+          "expectedGrowth": 23.01,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 207,668,028.80 元，同比增长 23.01%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 723,928,401.13 元，同比增长 32.76%。",
+        "netProfitLine": "归属于上市公司股东的净利润 207,668,028.80 元，同比增长 23.01%。"
+      }
+    },
+    {
+      "name": "中芯国际",
+      "code": "688981.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-27/1225037057.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 673.23192,
+          "expectedAmountYi": 673.23192,
+          "amountMatched": true,
+          "growth": 16.5,
+          "expectedGrowth": 16.5,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 67,323,192 千元，同比增长 16.5%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 50.40734,
+          "expectedAmountYi": 50.40734,
+          "amountMatched": true,
+          "growth": 36.3,
+          "expectedGrowth": 36.3,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 5,040,734 千元，同比增长 36.3%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 67,323,192 千元，同比增长 16.5%。",
+        "netProfitLine": "归属于上市公司股东的净利润 5,040,734 千元，同比增长 36.3%。"
+      }
+    },
+    {
+      "name": "中芯国际",
+      "code": "688981.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688981",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 176.17218,
+          "expectedAmountYi": 176.17218,
+          "amountMatched": true,
+          "growth": 8.1,
+          "expectedGrowth": 8.1,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 17,617,218 千元，同比增长 8.1%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 13.61209,
+          "expectedAmountYi": 13.61209,
+          "amountMatched": true,
+          "growth": 0.4,
+          "expectedGrowth": 0.4,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 1,361,209 千元，同比增长 0.4%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 17,617,218 千元，同比增长 8.1%。",
+        "netProfitLine": "归属于上市公司股东的净利润 1,361,209 千元，同比增长 0.4%。"
+      }
+    },
+    {
+      "name": "海光信息",
+      "code": "688041.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688041",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 143.7688947695,
+          "expectedAmountYi": 143.7688947695,
+          "amountMatched": true,
+          "growth": 56.92,
+          "expectedGrowth": 56.92,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 14,376,889,476.95 元，同比增长 56.92%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 25.448909056199998,
+          "expectedAmountYi": 25.448909056199998,
+          "amountMatched": true,
+          "growth": 31.79,
+          "expectedGrowth": 31.79,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 2,544,890,905.62 元，同比增长 31.79%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 14,376,889,476.95 元，同比增长 56.92%。",
+        "netProfitLine": "归属于上市公司股东的净利润 2,544,890,905.62 元，同比增长 31.79%。"
+      }
+    },
+    {
+      "name": "海光信息",
+      "code": "688041.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688041",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 40.3359218634,
+          "expectedAmountYi": 40.3359218634,
+          "amountMatched": true,
+          "growth": 68.06,
+          "expectedGrowth": 68.06,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 4,033,592,186.34 元，同比增长 68.06%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 6.870943367100001,
+          "expectedAmountYi": 6.870943367100001,
+          "amountMatched": true,
+          "growth": 35.82,
+          "expectedGrowth": 35.82,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 687,094,336.71 元，同比增长 35.82%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 4,033,592,186.34 元，同比增长 68.06%。",
+        "netProfitLine": "归属于上市公司股东的净利润 687,094,336.71 元，同比增长 35.82%。"
+      }
+    },
+    {
+      "name": "寒武纪",
+      "code": "688256.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260312/05ca784762a7401b9ed371d917e436dc.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 64.9719619868,
+          "expectedAmountYi": 64.9719619868,
+          "amountMatched": true,
+          "growth": 453.21,
+          "expectedGrowth": 453.21,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 6,497,196,198.68 元，同比增长 453.21%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 20.592285386700002,
+          "expectedAmountYi": 20.592285386700002,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "扭亏为盈",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 2,059,228,538.67 元，上年同期亏损，扭亏为盈。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 6,497,196,198.68 元，同比增长 453.21%。",
+        "netProfitLine": "归属于上市公司股东的净利润 2,059,228,538.67 元，上年同期亏损，扭亏为盈。"
+      }
+    },
+    {
+      "name": "寒武纪",
+      "code": "688256.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225264337.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 28.846967468600003,
+          "expectedAmountYi": 28.846967468600003,
+          "amountMatched": true,
+          "growth": 159.56,
+          "expectedGrowth": 159.56,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 2,884,696,746.86 元，同比增长 159.56%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 10.1321358194,
+          "expectedAmountYi": 10.1321358194,
+          "amountMatched": true,
+          "growth": 185.04,
+          "expectedGrowth": 185.04,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 1,013,213,581.94 元，同比增长 185.04%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 2,884,696,746.86 元，同比增长 159.56%。",
+        "netProfitLine": "归属于上市公司股东的净利润 1,013,213,581.94 元，同比增长 185.04%。"
+      }
+    },
+    {
+      "name": "奥比中光",
+      "code": "688322.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688322",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 9.4074363765,
+          "expectedAmountYi": 9.4074363765,
+          "amountMatched": true,
+          "growth": 66.66,
+          "expectedGrowth": 66.66,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 940,743,637.65 元，同比增长 66.66%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 1.2790997381,
+          "expectedAmountYi": 1.2790997381,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "扭亏为盈",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 127,909,973.81 元，上年同期亏损，扭亏为盈。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 940,743,637.65 元，同比增长 66.66%。",
+        "netProfitLine": "归属于上市公司股东的净利润 127,909,973.81 元，上年同期亏损，扭亏为盈。"
+      }
+    },
+    {
+      "name": "奥比中光",
+      "code": "688322.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688322",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 2.0288791406,
+          "expectedAmountYi": 2.0288791406,
+          "amountMatched": true,
+          "growth": 6.19,
+          "expectedGrowth": 6.19,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 202,887,914.06 元，同比增长 6.19%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.309965693,
+          "expectedAmountYi": 0.309965693,
+          "amountMatched": true,
+          "growth": 27.48,
+          "expectedGrowth": 27.48,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 30,996,569.30 元，同比增长 27.48%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 202,887,914.06 元，同比增长 6.19%。",
+        "netProfitLine": "归属于上市公司股东的净利润 30,996,569.30 元，同比增长 27.48%。"
+      }
+    },
+    {
+      "name": "绿的谐波",
+      "code": "688017.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260422/fad202eaa8cc417ebd561113cf2f9999.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 5.7071402525999995,
+          "expectedAmountYi": 5.7071402525999995,
+          "amountMatched": true,
+          "growth": 47.31,
+          "expectedGrowth": 47.31,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 570,714,025.26 元，同比增长 47.31%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 1.2436691357,
+          "expectedAmountYi": 1.2436691357,
+          "amountMatched": true,
+          "growth": 121.42,
+          "expectedGrowth": 121.42,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 124,366,913.57 元，同比增长 121.42%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 570,714,025.26 元，同比增长 47.31%。",
+        "netProfitLine": "归属于上市公司股东的净利润 124,366,913.57 元，同比增长 121.42%。"
+      }
+    },
+    {
+      "name": "绿的谐波",
+      "code": "688017.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-23/1225149861.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 1.401344563,
+          "expectedAmountYi": 1.401344563,
+          "amountMatched": true,
+          "growth": 42.96,
+          "expectedGrowth": 42.96,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 140,134,456.30 元，同比增长 42.96%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.3263414752,
+          "expectedAmountYi": 0.3263414752,
+          "amountMatched": true,
+          "growth": 61.17,
+          "expectedGrowth": 61.17,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 32,634,147.52 元，同比增长 61.17%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 140,134,456.30 元，同比增长 42.96%。",
+        "netProfitLine": "归属于上市公司股东的净利润 32,634,147.52 元，同比增长 61.17%。"
+      }
+    },
+    {
+      "name": "中无人机",
+      "code": "688297.SH",
+      "periodCode": "2025A",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-17/1225012993.PDF",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 30.1585137801,
+          "expectedAmountYi": 30.1585137801,
+          "amountMatched": true,
+          "growth": 340.11,
+          "expectedGrowth": 340.11,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 3,015,851,378.01 元，同比增长 340.11%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.8857487116,
+          "expectedAmountYi": 0.8857487116,
+          "amountMatched": true,
+          "growth": null,
+          "expectedGrowth": null,
+          "expectedGrowthText": "扭亏为盈",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 88,574,871.16 元，上年同期亏损，扭亏为盈。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 3,015,851,378.01 元，同比增长 340.11%。",
+        "netProfitLine": "归属于上市公司股东的净利润 88,574,871.16 元，上年同期亏损，扭亏为盈。"
+      }
+    },
+    {
+      "name": "中无人机",
+      "code": "688297.SH",
+      "periodCode": "2026Q1",
+      "sourceUrl": "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688297",
+      "status": "matched",
+      "checks": [
+        {
+          "label": "营业收入",
+          "amountYi": 5.7428402239,
+          "expectedAmountYi": 5.7428402239,
+          "amountMatched": true,
+          "growth": 143.59,
+          "expectedGrowth": 143.59,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "营业收入 574,284,022.39 元，同比增长 143.59%。",
+          "matched": true
+        },
+        {
+          "label": "归母净利润",
+          "amountYi": 0.1686449749,
+          "expectedAmountYi": 0.1686449749,
+          "amountMatched": true,
+          "growth": 0.11,
+          "expectedGrowth": 0.11,
+          "expectedGrowthText": "",
+          "growthMatched": true,
+          "raw": "归属于上市公司股东的净利润 16,864,497.49 元，同比增长 0.11%。",
+          "matched": true
+        }
+      ],
+      "evidence": {
+        "revenueLine": "营业收入 574,284,022.39 元，同比增长 143.59%。",
+        "netProfitLine": "归属于上市公司股东的净利润 16,864,497.49 元，同比增长 0.11%。"
       }
     }
   ]

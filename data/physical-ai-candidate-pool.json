@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "物理AI A股龙头候选池",
+  "updatedAt": "2026-06-30T03:45:00Z",
+  "summary": {
+    "total": 20,
+    "addedThisVersion": 7,
+    "alreadyInDatabase": 20,
+    "remainingForVerification": 0
+  },
+  "candidates": [
+    {
+      "name": "立昂微",
+      "code": "605358.SH",
+      "segment": "半导体硅片",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "半导体硅片"
+      ]
+    },
+    {
+      "name": "安集科技",
+      "code": "688019.SH",
+      "segment": "半导体材料",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "半导体材料"
+      ]
+    },
+    {
+      "name": "江丰电子",
+      "code": "300666.SZ",
+      "segment": "半导体材料",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "半导体材料"
+      ]
+    },
+    {
+      "name": "中芯国际",
+      "code": "688981.SH",
+      "segment": "晶圆制造",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "晶圆制造"
+      ]
+    },
+    {
+      "name": "海光信息",
+      "code": "688041.SH",
+      "segment": "AI计算芯片",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "AI计算芯片"
+      ]
+    },
+    {
+      "name": "寒武纪",
+      "code": "688256.SH",
+      "segment": "AI计算芯片",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "AI计算芯片"
+      ]
+    },
+    {
+      "name": "兆易创新",
+      "code": "603986.SH",
+      "segment": "边缘控制芯片",
+      "status": "原库已存在并补标签",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "边缘控制芯片"
+      ]
+    },
+    {
+      "name": "豪威集团",
+      "code": "603501.SH",
+      "segment": "机器视觉",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "机器视觉"
+      ]
+    },
+    {
+      "name": "奥比中光",
+      "code": "688322.SH",
+      "segment": "3D视觉感知",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "3D视觉感知"
+      ]
+    },
+    {
+      "name": "柯力传感",
+      "code": "603662.SH",
+      "segment": "力觉传感器",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "力觉传感器"
+      ]
+    },
+    {
+      "name": "汇川技术",
+      "code": "300124.SZ",
+      "segment": "控制与伺服",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "控制与伺服"
+      ]
+    },
+    {
+      "name": "绿的谐波",
+      "code": "688017.SH",
+      "segment": "精密减速器",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "精密减速器"
+      ]
+    },
+    {
+      "name": "三花智控",
+      "code": "002050.SZ",
+      "segment": "机器人执行器",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "机器人执行器"
+      ]
+    },
+    {
+      "name": "拓普集团",
+      "code": "601689.SH",
+      "segment": "机器人执行器",
+      "status": "已入库（v1.3.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "机器人执行器"
+      ]
+    },
+    {
+      "name": "五洲新春",
+      "code": "603667.SH",
+      "segment": "丝杠与轴承",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "丝杠与轴承"
+      ]
+    },
+    {
+      "name": "埃斯顿",
+      "code": "002747.SZ",
+      "segment": "机器人本体",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "机器人本体"
+      ]
+    },
+    {
+      "name": "机器人",
+      "code": "300024.SZ",
+      "segment": "机器人本体",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "机器人本体"
+      ]
+    },
+    {
+      "name": "德赛西威",
+      "code": "002920.SZ",
+      "segment": "智能驾驶",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "智能驾驶"
+      ]
+    },
+    {
+      "name": "中无人机",
+      "code": "688297.SH",
+      "segment": "无人系统",
+      "status": "已入库（v1.5.0）",
+      "isSTAR": true,
+      "tags": [
+        "物理AI",
+        "无人系统"
+      ]
+    },
+    {
+      "name": "科大讯飞",
+      "code": "002230.SZ",
+      "segment": "具身智能模型",
+      "status": "已入库（v1.4.0）",
+      "isSTAR": false,
+      "tags": [
+        "物理AI",
+        "具身智能模型"
+      ]
+    }
+  ]
+}

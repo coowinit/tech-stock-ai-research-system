@@ -155,6 +155,22 @@ data/pdf-field-audit-result.json
 
 当前内置数据库已完成 PDF 字段级核验标记。
 
+
+### 9. 物理AI龙头产业链
+
+`v1.3.0—v1.5.0` 分三批建立物理AI研究主线，将半导体材料与硅片、晶圆制造、AI芯片、机器视觉、力觉传感、工业自动化、精密传动、机器人本体、智能驾驶、无人系统和具身智能模型串联到同一正式数据库。
+
+第三批补齐7家科创板核心公司：安集科技、中芯国际、海光信息、寒武纪、奥比中光、绿的谐波、中无人机。当前20股核心候选池已 **20/20 全部核验入库**，正式数据库共有 **25 家物理AI关联公司**。
+
+在 `index.html` 搜索“物理AI”即可查看整条产业链。系统仍默认排除科创板，因此日常筛选习惯保持不变。完整资料见：
+
+```text
+data/physical-ai-candidate-pool.json
+docs/PHYSICAL-AI-RESEARCH.md
+docs/PHYSICAL-AI-BATCH-2-AUDIT.md
+docs/PHYSICAL-AI-BATCH-3-AUDIT.md
+```
+
 ## 当前数据状态
 
 当前内置正式数据库状态：
@@ -162,11 +178,12 @@ data/pdf-field-audit-result.json
 | 项目 | 状态 |
 | --- | --- |
 | 数据结构版本 | `2.1.0` |
-| 内置数据版本 | `2026-06-24-pdf-field-audited-v1` |
-| 公司数量 | 80 家 |
-| 报告记录 | 160 条 |
+| 内置数据版本 | `2026-06-30-physical-ai-core-v3` |
+| 公司数量 | 99 家 |
+| 报告记录 | 198 条 |
 | 报告期 | `2025A`、`2026Q1` |
-| 已核验记录 | 160 条 |
+| 正式来源记录 | 198 条，均通过公告来源门槛 |
+| PDF字段状态 | matched 187 条、partial 9 条、mismatch 2 条（历史状态原样保留） |
 | 默认存储位置 | 浏览器 `localStorage` |
 
 默认筛选条件：
@@ -203,6 +220,7 @@ tech-stock-ai-research-system/
 │     └─ screening.js                 # 筛选中心页面逻辑
 ├─ data/
 │  ├─ stocks.json                     # 正式数据库 JSON 文件
+│  ├─ physical-ai-candidate-pool.json # 物理AI 20股候选池与核验进度
 │  ├─ ai-response-example.json        # 旧版 AI 响应示例
 │  ├─ candidate-discovery-example.json
 │  ├─ official-verification-example.json
@@ -922,7 +940,7 @@ http://127.0.0.1:8000/
 当前项目版本：
 
 ```text
-v1.0.0
+v1.3.0
 ```
 
 主要能力：
